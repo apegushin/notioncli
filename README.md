@@ -1,0 +1,2 @@
+# notioncli
+Notion todo CLI
