@@ -18,7 +18,7 @@ func main() {
 	fmt.Printf("Defined and parsed CLI args\n")
 
 	if *integrationName != "" {
-		err := config.NewConfig().AddIntegrationRecord(*integrationName, *integrationToken, *integrationDatabaseId)
+		err := config.NewConfig("notioncli.cfg").AddIntegrationRecord(*integrationName, *integrationToken, *integrationDatabaseId)
 		if err != nil {
 			fmt.Fprintln(os.Stderr, err)
 			os.Exit(1)
